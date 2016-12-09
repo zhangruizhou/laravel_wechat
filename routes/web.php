@@ -19,7 +19,7 @@ Route::get('/', function () {
 Route::get('/home', 'HomeController@index');
 
 
-Route::group(['domain'=>'passport.yaoxuefei.net'],function(){
+Route::group(['domain'=>'login.yaoxuefei.net'],function(){
     Auth::routes();
     //Route::get('/', 'IndexController@index');
 });
