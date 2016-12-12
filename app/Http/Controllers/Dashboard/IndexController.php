@@ -11,6 +11,6 @@ class IndexController extends BaseController {
     }
 
     public function index(){
-        echo 'index';
+        return view('home');
     }
 }
