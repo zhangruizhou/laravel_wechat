@@ -18,6 +18,11 @@ Route::get('/', function () {
 
 Route::get('/home', 'HomeController@index');
 
+Route::group(['domain'=>'dashboard.yaoxuefei.me','namespace' => 'Dashboard'],function(){
+
+    Route::get('/', 'IndexController@index');
+});
+
 
 Route::group(['domain'=>'login.yaoxuefei.net'],function(){
     Auth::routes();
